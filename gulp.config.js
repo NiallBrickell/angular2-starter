@@ -2,12 +2,14 @@ var historyApiFallback = require('connect-history-api-fallback')
 
 module.exports = function () {
     var root = '';
-    var app = root + 'app/';
+    var client = root + 'client/';
+    var app = client + 'app/';
     var test = root + 'test/';
+    var app_tests = test + 'app/';
     var tmp = root + 'tmp/';
     var testHelper = test + 'test-helpers/';
     var e2e = test + 'e2e/';
-    var assets = root + 'assets/';
+    var assets = app + 'assets/';
     var assetsPath = {
         styles: assets + 'styles/',
         images: assets + 'images/',
@@ -18,15 +20,27 @@ module.exports = function () {
         app + '**/!(*.spec)+(.ts)'
     ];
     var tsTestFiles = {
-        unit: [app + '**/*.spec.ts'],
+        unit: [app_tests + '**/*.spec.ts'],
         e2e: [e2e + '**/*.ts'],
         helper: [testHelper + '**/*.ts']
     };
     var build = {
         path: 'build/',
         app: 'build/app/',
-        fonts: 'build/fonts',
-        assetPath: 'build/assets/',
+        fonts: 'build/fonts/',
+        assetsPath: 'build/assets/',
+        assets: {
+            lib: {
+                js: 'lib.js',
+                css: 'lib.css'
+            }
+        }
+    };
+    var build_dev = {
+        path: 'build_dev/',
+        app: 'build_dev/app/',
+        fonts: 'build_dev/fonts/',
+        assetsPath: 'build_dev/app/assets/',
         assets: {
             lib: {
                 js: 'lib.js',
@@ -41,16 +55,16 @@ module.exports = function () {
         dev: {
             port: 3000,
             server: {
-                baseDir: './',
+                baseDir: build_dev.path,
                 middleware: [historyApiFallback()]
             },
             files: [
-                "index.html",
-                "systemjs.conf.js",
-                "assets/styles/main.css",
-                "tmp/app/**/*.js",
-                "app/**/*.css",
-                "app/**/*.html"
+                build_dev.path + "index.html",
+                build_dev.path + "systemjs.conf.js",
+                build_dev.assetPath + "styles/main.css",
+                build_dev.app + "**/*.js",
+                build_dev.app + "**/*.css",
+                build_dev.app + "**/*.html"
             ]
         },
         prod: {
@@ -78,8 +92,10 @@ module.exports = function () {
 
     var config = {
         root: root,
+        client: client,
         app: app,
         test: test,
+        app_tests: app_tests,
         tmp: tmp,
         testHelper: testHelper,
         e2e: e2e,
@@ -87,6 +103,7 @@ module.exports = function () {
         assets: assets,
         index: index,
         build: build,
+        build_dev: build_dev,
         report: report,
         assetsPath: assetsPath,
         tsFiles: tsFiles,
