@@ -10,13 +10,13 @@
 
     // wildcard paths
     var paths = {
-        'n:*': 'node_modules/*'
+        'n:*': '../node_modules/*'
     };
 
     // map tells the System loader where to look for things
     var map = {
-        'app': 'tmp/app',
-        'test': 'tmp/test',
+        'app': '/app',
+        'test': '/test',
         'rxjs': 'n:rxjs',
         '@angular': 'n:@angular',
         'lodash': 'n:lodash'

@@ -3,7 +3,7 @@ var historyApiFallback = require('connect-history-api-fallback')
 module.exports = function () {
     var root = '';
     var client = root + 'client/';
-    var app = client + 'app/';
+    var app = root + 'app/';
     var test = root + 'test/';
     var app_tests = test + 'app/';
     var testHelper = test + 'test-helpers/';
@@ -38,7 +38,7 @@ module.exports = function () {
     var build_dev = {
         path: 'build_dev/',
         app: 'build_dev/app/',
-        fonts: 'build_dev/fonts/',
+        fonts: 'build_dev/app/assets/fonts/',
         assetsPath: 'build_dev/app/assets/',
         assets: {
             lib: {

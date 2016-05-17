@@ -33,5 +33,5 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch-sass', function () {
-    gulp.watch(config.assetsPath.styles + '**/*.scss', ['sass']);
+    gulp.watch(config.app + '**/*.scss', ['sass']);
 });
