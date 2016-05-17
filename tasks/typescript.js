@@ -21,19 +21,19 @@ gulp.task('watch-ts', function () {
 });
 
 /* Compile typescripts */
-gulp.task('tsc', ['clean-ts'], function () {
+gulp.task('tsc', function () {
     return compileTs(tsFiles);
 });
 
-gulp.task('tsc-app', ['clean-ts-app'], function () {
+gulp.task('tsc-app', function () {
     return compileTs(config.tsFiles);
 });
 
-gulp.task('tsc-unit', ['clean-ts-test'], function () {
+gulp.task('tsc-unit', function () {
     return compileTs(tsUnitFiles);
 });
 
-gulp.task('tsc-e2e', ['clean-ts-test'], function () {
+gulp.task('tsc-e2e', function () {
     return compileTs(tsE2EFiles);
 });
 
@@ -67,8 +67,8 @@ function compileTs(files, watchMode) {
     var tsProject = ts.createProject(config.root + 'tsconfig.json');
     var allFiles = [].concat(files, typingFiles);
     var res = gulp.src(allFiles, {
-            base: '.',
-            outDir: config.tmp
+            base: config.client,
+            outDir: config.build_dev.path
         })
         .pipe(tslint())
         .pipe(tslint.report('prose', {
@@ -84,5 +84,5 @@ function compileTs(files, watchMode) {
         .pipe(sourcemaps.write('.', {
               includeContent: false
             }))
-        .pipe(gulp.dest(config.tmp));
+        .pipe(gulp.dest(config.build_dev.path));
 }

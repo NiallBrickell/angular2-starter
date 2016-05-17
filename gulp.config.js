@@ -6,7 +6,6 @@ module.exports = function () {
     var app = client + 'app/';
     var test = root + 'test/';
     var app_tests = test + 'app/';
-    var tmp = root + 'tmp/';
     var testHelper = test + 'test-helpers/';
     var e2e = test + 'e2e/';
     var assets = app + 'assets/';
@@ -96,7 +95,6 @@ module.exports = function () {
         app: app,
         test: test,
         app_tests: app_tests,
-        tmp: tmp,
         testHelper: testHelper,
         e2e: e2e,
         e2eConfig: e2eConfig,

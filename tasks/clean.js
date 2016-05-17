@@ -2,12 +2,14 @@ var gulp = require('gulp');
 var config = require('../gulp.config')();
 var del = require('del');
 
-/* Run all clean tasks */
-gulp.task('clean', ['clean-build', 'clean-report', 'clean-ts', 'clean-sass']);
-
 /* Clean build folder */
 gulp.task('clean-build', function () {
     return del([config.build.path]);
+});
+
+/* Clean build_dev folder */
+gulp.task('clean-build_dev', function () {
+    return del([config.build_dev.path]);
 });
 
 /* Clean report folder */
@@ -20,23 +22,5 @@ gulp.task('clean-sass', function () {
     return del([config.assetsPath.styles + '**/*.css']);
 });
 
-/* Clean js and map */
-gulp.task('clean-ts', function () {
-    return del([config.tmp]);
-});
-
-gulp.task('clean-ts-app', function () {
-    return del([
-        config.tmp + config.app + '**/*.js',
-        config.tmp + config.app + '**/*.js.map'
-    ]);
-});
-
-gulp.task('clean-ts-test', function () {
-    return del([
-        config.tmp + config.app + '**/*.spec.js',
-        config.tmp + config.app + '**/*.spec.js.map',
-        config.tmp + config.test + '**/*.js',
-        config.tmp + config.test + '**/*.js.map'
-    ]);
-});
+/* Run all clean tasks */
+gulp.task('clean', ['clean-build', 'clean-build_dev', 'clean-report', 'clean-sass']);
