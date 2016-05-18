@@ -67,7 +67,7 @@ function compileTs(files, watchMode) {
     var tsProject = ts.createProject(config.root + 'tsconfig.json');
     var allFiles = [].concat(files, typingFiles);
     var res = gulp.src(allFiles, {
-            base: config.app,
+            base: config.client,
             outDir: config.build_dev.path
         })
         .pipe(tslint())

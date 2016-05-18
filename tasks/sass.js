@@ -29,7 +29,7 @@ gulp.task('set-theme', function () {
 gulp.task('sass', function () {
     return gulp.src(config.assetsPath.styles + 'main.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(config.assetsPath.styles));
+        .pipe(gulp.dest(config.build_dev.assetsPath + 'styles/'));
 });
 
 gulp.task('watch-sass', function () {

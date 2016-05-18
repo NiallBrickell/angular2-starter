@@ -21,7 +21,7 @@ gulp.task('build-sjs', function (done) {
         builder.loadConfig('./systemjs.conf.js')
         .then(function() {
             return builder
-                .buildStatic(config.app + 'main.js',
+                .buildStatic(config.client + 'main.js',
                         config.build_dev.app + 'bundle.js',
                 config.systemJs.builder);
         })
@@ -39,13 +39,13 @@ gulp.task('build-sjs', function (done) {
 /* Concat and minify/uglify all css, js, and copy fonts */
 gulp.task('build-assets', function (done) {
     runSequence('clean-build', ['sass', 'fonts'], function () {
-        gulp.src(config.app + '**/*.html', {
-            base: config.app
+        gulp.src(config.client + '**/*.html', {
+            base: config.client
         })
         .pipe(gulp.dest(config.build.app));
 
-        gulp.src(config.app + '**/*.css', {
-            base: config.app
+        gulp.src(config.client + '**/*.css', {
+            base: config.client
         })
         .pipe(cssnano())
         .pipe(gulp.dest(config.build.app));

@@ -9,10 +9,9 @@ var require = [
 	"./node_modules/systemjs/dist/system.js*",
 	"./node_modules/font-awesome/css/font-awesome.css"
 ];
-//***TODO***// Build bundle etc in build dir so we can deploy fast with the same process
 
 gulp.task('copyStatic', function() {
-	return gulp.src([config.app + '**/*.html', config.app + '**/*.js', config.assetsPath.fonts + '**/*.*', config.assetsPath.images + '**/*.*'], {base: config.app})
+	return gulp.src([config.client + '**/*.html', config.client + '**/*.{js,map,json,css,woff,ttf}', config.assetsPath.fonts + '**/*.*', config.assetsPath.images + '**/*.*'], {base: config.client})
 	    .pipe(gulp.dest(config.build_dev.path));
 });
 gulp.task('copyVendor', function() {
@@ -22,5 +21,5 @@ gulp.task('copyVendor', function() {
 gulp.task('static', ['copyStatic', 'copyVendor']);
 
 gulp.task('watch-static', function () {
-    gulp.watch([config.app + '*.*', config.assetsPath.fonts + '**/*.*', config.assetsPath.images + '**/*.*'], ['static']);
+    gulp.watch([config.client + '*.*', config.assetsPath.fonts + '**/*.*', config.assetsPath.images + '**/*.*'], ['static']);
 });

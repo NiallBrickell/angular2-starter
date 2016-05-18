@@ -1,1 +1,0 @@
-module.exports = require("npm:@angular/router-deprecated@2.0.0-rc.1/index.js");

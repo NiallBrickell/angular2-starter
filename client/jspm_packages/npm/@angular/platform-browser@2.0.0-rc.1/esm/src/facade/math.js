@@ -1,6 +1,0 @@
-/* */ 
-"format cjs";
-import { global } from './lang';
-export var Math = global.Math;
-export var NaN = typeof NaN;
-//# sourceMappingURL=math.js.map

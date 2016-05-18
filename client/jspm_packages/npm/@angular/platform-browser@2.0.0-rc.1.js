@@ -1,1 +1,0 @@
-module.exports = require("npm:@angular/platform-browser@2.0.0-rc.1/index.js");

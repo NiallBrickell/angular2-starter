@@ -10,7 +10,7 @@
 
     // wildcard paths
     var paths = {
-        'n:*': '../node_modules/*'
+        'n:*': '../node_modules/*' //TODO
     };
 
     // map tells the System loader where to look for things
