@@ -1,0 +1,1 @@
+module.exports = require("npm:@angular/http@2.0.0-rc.1/index.js");

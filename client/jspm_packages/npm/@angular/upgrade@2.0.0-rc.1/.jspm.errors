@@ -1,0 +1,121 @@
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:1:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:2:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:2:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:3:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:3:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:4:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:4:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:5:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:5:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:6:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:6:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:7:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:7:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:8:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:8:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:9:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:9:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:10:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:10:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:11:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:11:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:12:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:12:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:13:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:13:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:14:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/constants.js:14:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:19:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:19:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:20:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:20:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:21:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:21:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:22:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:22:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:23:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:23:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:24:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/angular_js.js:24:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:1:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:1:45: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:2:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:2:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:2:27: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:6:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/downgrade_ng2_adapter.js:6:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:1:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:1:35: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:5:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:5:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:19:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/metadata.js:19:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:1:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:1:101: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:2:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:2:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:2:47: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:3:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:3:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:3:33: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:4:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:4:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:4:34: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:5:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:5:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:5:40: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:6:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:6:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:6:174: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:7:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:7:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:7:46: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:8:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:8:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:8:51: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:9:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:9:13: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:9:21: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:9:26: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:80:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:80:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:525:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_adapter.js:525:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:1:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:1:61: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:2:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:2:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:2:94: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:3:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:3:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:3:31: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:4:1: Unexpected reserved word import
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:4:13: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:4:21: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:4:26: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:10:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/upgrade_ng1_adapter.js:10:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:1:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:1:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:6:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:6:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:11:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/src/util.js:11:8: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/upgrade.js:6:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/upgrade.js:6:8: Semi-colon expected
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/upgrade.js:6:51: Semi-colon expected
+
+MultipleErrors: /Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/index.js:1:1: Unexpected reserved word export
+/Users/niall/.jspm/packages/npm/@angular/upgrade@2.0.0-rc.1/esm/index.js:1:15: Semi-colon expected
