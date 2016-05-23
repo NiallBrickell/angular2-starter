@@ -22,19 +22,20 @@ gulp.task('watch-ts', function () {
 
 /* Compile typescripts */
 gulp.task('tsc', function () {
-    return compileTs(tsFiles);
+	compileAppTs(tsFiles);
+	return compileTestTs(tsFiles);
 });
 
 gulp.task('tsc-app', function () {
-    return compileTs(config.tsFiles);
+    return compileAppTs(config.tsFiles);
 });
 
 gulp.task('tsc-unit', function () {
-    return compileTs(tsUnitFiles);
+    return compileTestTs(tsUnitFiles);
 });
 
 gulp.task('tsc-e2e', function () {
-    return compileTs(tsE2EFiles);
+    return compileTestTs(tsE2EFiles);
 });
 
 /* Lint typescripts */
@@ -62,7 +63,7 @@ function lintTs(files) {
         }));
 }
 
-function compileTs(files, watchMode) {
+function compileAppTs(files, watchMode) {
     watchMode = watchMode || false;
     var tsProject = ts.createProject(config.root + 'tsconfig.json');
     var allFiles = [].concat(files, typingFiles);
@@ -78,11 +79,36 @@ function compileTs(files, watchMode) {
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject))
         .on('error', function () {
-            process.exit(1);
+            // process.exit(1);
+            console.warn('Error occured... waiting for changes');
         });
     return res.js
         .pipe(sourcemaps.write('.', {
               includeContent: false
             }))
         .pipe(gulp.dest(config.build_dev.path));
+}
+function compileTestTs(files, watchMode) {
+    watchMode = watchMode || false;
+    var tsProject = ts.createProject(config.root + 'tsconfig.json');
+    var allFiles = [].concat(files, typingFiles);
+    var res = gulp.src(allFiles, {
+            base: config.test,
+            outDir: config.test_js
+        })
+        .pipe(tslint())
+        .pipe(tslint.report('prose', {
+            summarizeFailureOutput: true,
+            emitError: !watchMode
+        }))
+        // .pipe(sourcemaps.init())
+        .pipe(ts(tsProject))
+        .on('error', function () {
+            console.warn('Error occured... waiting for changes');
+        });
+    return res.js
+        .pipe(sourcemaps.write('.', {
+              includeContent: false
+            }))
+        .pipe(gulp.dest(config.test_js));
 }

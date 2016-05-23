@@ -6,7 +6,7 @@ import {
     beforeEach,
     beforeEachProviders
 } from '@angular/core/testing';
-import { LoggerService } from './logger.service';
+import { LoggerService } from '../../../client/app/blocks/logger.service';
 
 describe('AppComponent', () => {
     beforeEachProviders(() => [LoggerService]);

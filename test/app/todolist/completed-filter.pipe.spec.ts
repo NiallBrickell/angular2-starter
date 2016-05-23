@@ -1,5 +1,5 @@
-import { CompletedFilterPipe } from './completed-filter.pipe';
-import { Todo } from './todo.model';
+import { CompletedFilterPipe } from '../../../client/app/todolist/completed-filter.pipe';
+import { Todo } from '../../../client/app/todolist/todo.model';
 
 describe('CompletedFilterPipe', () => {
     let pipe: CompletedFilterPipe;

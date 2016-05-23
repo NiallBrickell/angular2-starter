@@ -9,7 +9,7 @@ gulp.task('clean-build', function () {
 
 /* Clean build_dev folder */
 gulp.task('clean-build_dev', function () {
-    return del([config.build_dev.path]);
+    return del([config.build_dev.path+'/!(jspm_packages)']);
 });
 
 /* Clean report folder */
@@ -17,10 +17,5 @@ gulp.task('clean-report', function () {
     return del([config.report.path]);
 });
 
-/* Clean sass compile */
-gulp.task('clean-sass', function () {
-    return del([config.assetsPath.styles + '**/*.css']);
-});
-
 /* Run all clean tasks */
-gulp.task('clean', ['clean-build', 'clean-build_dev', 'clean-report', 'clean-sass']);
+gulp.task('clean', ['clean-build', 'clean-build_dev', 'clean-report']);

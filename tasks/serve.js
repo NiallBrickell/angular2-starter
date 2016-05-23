@@ -15,7 +15,7 @@ gulp.task('browserSync', function() {
 
 /* Start live server dev mode */
 gulp.task('serve-dev', function(cb) {
-	runSequence('clean', ['static', 'sass', 'tsc-app', 'watch-static', 'watch-ts', 'watch-sass'], 'browserSync', cb);
+	runSequence('clean', 'static', 'sass', 'tsc-app', ['watch-static', 'watch-ts', 'watch-sass'], 'browserSync', cb);
 });
 
 /* Start live server production mode */

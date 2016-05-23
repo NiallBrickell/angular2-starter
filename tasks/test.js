@@ -3,18 +3,23 @@ var config = require('../gulp.config')();
 var Server = require('karma').Server;
 var gulpProtractor = require('gulp-protractor');
 var remapIstanbul = require('remap-istanbul/lib/gulpRemapIstanbul');
+var runSequence = require('run-sequence');
 
-gulp.task('test', ['clean-report', 'unit-test']);
+gulp.task('test', function() {
+	runSequence('clean-report', 'clean', 'unit-test');
+	// runSequence('clean-report', 'clean', 'unit-test', 'e2e'); DEV
+});
 
-gulp.task('unit-test', ['tsc'], function (done) {
-    new Server({
-        configFile: __dirname + '/../karma.conf.js',
-        singleRun: true
-    }, karmaDone).start();
+gulp.task('unit-test', function(done) {
+	runSequence('clean', ['static', 'tsc'], function () {
+	    new Server({
+	        configFile: __dirname + '/../karma.conf.js'
+	    }, karmaDone).start();
 
-    function karmaDone (exitCode) {
-    	remapCoverage(done, exitCode);
-    }
+	    function karmaDone (exitCode) {
+	    	remapCoverage(done, exitCode);
+	    }
+	});
 });
 
 gulp.task('e2e', ['e2e-test']);

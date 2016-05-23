@@ -9,7 +9,7 @@ import {LoggerService} from './blocks/logger.service';
 
 declare var ENV: string;
 
-if (ENV === 'production') {
+if (typeof ENV !== 'undefined' && ENV === 'production') {
     enableProdMode();
 }
 

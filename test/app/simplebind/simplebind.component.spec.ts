@@ -9,7 +9,7 @@ import {
     TestComponentBuilder
 } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
-import { SimplebindComponent } from './simplebind.component';
+import { SimplebindComponent } from '../../../client/app/simplebind/simplebind.component';
 
 @Component({
     selector: 'as-test',

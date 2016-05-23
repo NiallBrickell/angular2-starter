@@ -10,7 +10,7 @@ import {
     ComponentFixture
 } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
-import { ChildComponent } from './child.component';
+import { ChildComponent } from '../../../client/app/simplebind/child.component';
 
 @Component({
     selector: 'as-test',

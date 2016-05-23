@@ -5,6 +5,7 @@ module.exports = function () {
     var client = root + 'client/';
     var app = client + 'app/';
     var test = root + 'test/';
+    var test_js = root + 'test_js/';
     var app_tests = test + 'app/';
     var testHelper = test + 'test-helpers/';
     var e2e = test + 'e2e/';
@@ -16,7 +17,7 @@ module.exports = function () {
     };
     var index = root + 'index.html';
     var tsFiles = [
-        app + '**/!(*.spec)+(.ts)'
+        client + '!(jspm_packages)/**/*.ts'
     ];
     var tsTestFiles = {
         unit: [app_tests + '**/*.spec.ts'],
@@ -94,6 +95,7 @@ module.exports = function () {
         client: client,
         app: app,
         test: test,
+        test_js: test_js,
         app_tests: app_tests,
         testHelper: testHelper,
         e2e: e2e,

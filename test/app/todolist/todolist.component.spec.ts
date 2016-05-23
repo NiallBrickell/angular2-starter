@@ -10,8 +10,8 @@ import {
     ComponentFixture
 } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
-import { Todo } from './todo.model';
-import { TodolistComponent } from './todolist.component';
+import { Todo } from '../../../client/app/todolist/todo.model';
+import { TodolistComponent } from '../../../client/app/todolist/todolist.component';
 
 @Component({
     selector: 'as-test',

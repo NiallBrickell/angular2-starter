@@ -4,10 +4,15 @@ Error.stackTraceLimit=Infinity;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000;
 
 // Cancel Karma's synchronous start,
-// we will call `__karma__.start()` later, once all the specs are loaded.
+// we will call `__karma__.start()` later, once all the specs are loaded - NOTE: jasmine does this for us!
 __karma__.loaded = function() {};
 
-System.import('test/test-helpers/setup')
+//Zone
+var zone = require('zone.js');
+var zone_async = require('zone.js/dist/async-test.js');
+var zone_fasync = require('zone.js/dist/fake-async-test.js');
+
+System.import('test_js/test-helpers/setup')
 .then(function() {
     return Promise.all(
         Object.keys(window.__karma__.files)
@@ -17,8 +22,9 @@ System.import('test/test-helpers/setup')
     );
 })
 .then(function() {
-    __karma__.start();
+    // __karma__.start();
 }, function(error) {
+	throw new Error(error);
     __karma__.error(error.name + ": " + error.message);
 });
 
@@ -36,5 +42,6 @@ function file2moduleName(filePath) {
 
 // Import module path
 function importModules(path) {
+	console.log(path);
     return System.import(path);
 }
