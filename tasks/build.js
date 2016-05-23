@@ -7,13 +7,10 @@ var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
-var Builder = require('systemjs-builder');
 
-/* Prepare build using SystemJS Builder */
-gulp.task('build', function (done) {
-    runSequence('test', 'build-sjs', 'build-assets', done);
-});
+require('ngstarter-systemjs-tasks');
 
+<<<<<<< HEAD
 gulp.task('build-sjs', function (done) {
     runSequence('tsc-app', buildSJS);
     function buildSJS () {
@@ -34,6 +31,10 @@ gulp.task('build-sjs', function (done) {
             done('Build failed.');
         });
     }
+=======
+gulp.task('build', function (done) {
+    runSequence('test', 'build-systemjs', 'build-assets', done);
+>>>>>>> antonybudianto/master
 });
 
 /* Concat and minify/uglify all css, js, and copy fonts */

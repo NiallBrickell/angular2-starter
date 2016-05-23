@@ -1,7 +1,7 @@
 module.exports = function(config) {
   var dependencies = require('./package.json').dependencies;
   var excludedDependencies = [
-    'systemjs', 'zone.js', 'font-awesome', 'bootswatch'
+    'systemjs', 'zone.js', 'font-awesome'
   ];
   var configuration = {
   	baseURL: '',
@@ -12,8 +12,14 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
+<<<<<<< HEAD
       'build_dev/app/**/!(*.spec)+(.js)': ['coverage'],
       '**/*.js': ['sourcemap']
+=======
+      'tmp/app/**/!(*.spec)+(.js)': ['coverage'],
+      'tmp/app/**/*.js': ['sourcemap'],
+      'tmp/test/**/*.js': ['sourcemap']
+>>>>>>> antonybudianto/master
     },
 
     // Generate json used for remap-istanbul
@@ -46,10 +52,16 @@ module.exports = function(config) {
 		{ pattern: 'client/**/*.js.map', included: false, watched: false}
     ],
 
+<<<<<<< HEAD
     // proxied base paths
     proxies: {
       "/build_dev/jspm_packages/": "/base/build_dev/jspm_packages/",
       "/jspm_packages/": "/base/build_dev/jspm_packages/",
+=======
+      'tmp/test/test-helpers/global/**/*.js',
+      'systemjs.conf.js',
+      'karma-test-shim.js',
+>>>>>>> antonybudianto/master
 
       "/test_js/": "/base/test_js/",
 
@@ -64,8 +76,12 @@ module.exports = function(config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
+<<<<<<< HEAD
     autoWatch: false,
     singleRun: false
+=======
+    autoWatch: true,
+>>>>>>> antonybudianto/master
   };
 
   if (process.env.APPVEYOR) {
