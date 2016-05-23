@@ -42,7 +42,6 @@ System.config({
     "font-awesome": "npm:font-awesome@4.6.1",
     "fortawesome/font-awesome": "github:fortawesome/font-awesome@4.6.3",
     "lodash": "npm:lodash@4.12.0",
-    "niallbrickell/bootstrap-material-design": "github:niallbrickell/bootstrap-material-design@0.5.9",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "rxjs": "npm:rxjs@5.0.0-beta.7",
     "zone.js": "npm:zone.js@0.6.12",
