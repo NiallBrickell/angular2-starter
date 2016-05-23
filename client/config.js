@@ -33,7 +33,7 @@ System.config({
     "@angular/upgrade@2.0.0-rc.1": "npm:@angular/upgrade@2.0.0-rc.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
-    "bootstrap-material-design": "github:niallbrickell/bootstrap-material-design@0.5.9",
+    "bootstrap-material-design": "github:niallbrickell/bootstrap-material-design@0.6.0",
     "bootstrap-sass": "npm:bootstrap-sass@3.3.6",
     "bootswatch": "npm:bootswatch@3.3.6",
     "core-js": "npm:core-js@1.2.6",
