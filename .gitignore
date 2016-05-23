@@ -1,9 +1,8 @@
 /node_modules
 /client/jspm_packages
-/bower_components
 /build
 /build_dev
 /report
+/test_js
 /typings
-/tmp
 .DS_Store

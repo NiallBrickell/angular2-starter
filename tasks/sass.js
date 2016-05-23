@@ -1,10 +1,14 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var config = require('../gulp.config')();
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	config = require('../gulp.config')(),
+	sassJspm = require('sass-jspm-importer');
 
 gulp.task('sass', function () {
     return gulp.src(config.assetsPath.styles + 'main.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+        	functions: sassJspm.resolve_function(config.build_dev + 'jspm_packages/'),
+        	importer: sassJspm.importer
+        }).on('error', sass.logError))
         .pipe(gulp.dest(config.build_dev.assetsPath + 'styles/'));
 });
 

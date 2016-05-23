@@ -19,13 +19,12 @@ System.import('test_js/test-helpers/setup')
         .filter(onlySpecFiles)
         .map(file2moduleName)
         .map(importModules)
-    );
+    ).catch(function(err) {
+    	throw new Error(err);
+    });
 })
-.then(function() {
-    // __karma__.start();
-}, function(error) {
-	throw new Error(error);
-    __karma__.error(error.name + ": " + error.message);
+.catch(function(error) {
+	throw new Error(error.name+": "+error.message);
 });
 
 // Filter spec files
@@ -42,6 +41,5 @@ function file2moduleName(filePath) {
 
 // Import module path
 function importModules(path) {
-	console.log(path);
     return System.import(path);
 }
