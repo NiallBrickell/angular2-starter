@@ -4,7 +4,7 @@
 //**** Bootstrap ****//
 
 // Typography elements
-$mdb-font-family: 'OpenSans', 'Helvetica', 'Arial', sans-serif !default;
+$mdb-font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif !default;
 $mdb-text-color-light:  unquote("rgba(#{$rgb-white}, 0.84)") !default;
 $mdb-text-color-light-hex: $white !default; // for contrast function in inverse
 $mdb-text-color-primary: unquote("rgba(#{$rgb-black}, 0.87)") !default;
@@ -29,7 +29,7 @@ $border-radius-base: 2px !default;
 $border-radius-small: 1px !default;
 
 // Typography
-$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$mdb-font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif !default;
 $headings-font-weight: 300 !default;
 
 $body-bg: #EEEEEE !default;
